@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  overflow: hidden;
+}
+.person_infor{
+  background-color: black;
+  height:240px;
+  color: white;
+  font-size: 12px;
+  overflow: hidden;
+}
+.person_infor p {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.person_infor i{
+  float: right;
+  font-size: 18px;
+}
+
+/*左侧整体导航*/
+.person_all{
+  position: relative;
+  outline: 1px solid green!important;
+  width: 300px;
+}
+.el-col-4{
+  height: 100%;
+  width: 18%;
+  position: fixed;
+}
+#mymenu{
+  margin-top: 240px;
+  color: #cccccc;
+}
+.el-menu{
+  border: none;
+
+}
+.el-submenu__title{
+  background-color: black !important;
+  height: 45px !important;
+  color: #cccccc!important;
+
+}
+.el-submenu__title:hover{
+  color: white!important;
+}
+.el-menu-item{
+  background-color: black !important;
+  height: 45px!important;
+  color: #cccccc!important;
+}
+.el-menu-item:hover{
+  color: white!important;
+}
+.el-menu-item-group__title{
+  padding: 0px;
+}
+.el-menu-vertical-demo{
+  height: 100% !important;
+  background-color: black !important;
+}
+.el-icon-back{
+  margin-left: 50px;
+  margin-right: 11px;
+}
+a{
+  text-decoration: none;
+  color: #cccccc;
+}

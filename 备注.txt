@@ -1,0 +1,4 @@
+1.建表成功后，由于外键原因，goodsstock,goodsimages这三张表的数据添加不成功或者数据添加不完整。
+2.各类商品表：alpenstock,bag,belt,glasses,glove,hairbelt,hat,helmet,kneepad,pants,safelock,shoes,ski
+  添加足够的goodsId后，后台系统的产品clothes添加，才能添加成功，goodsstock,goodsimages的数据才能添加完整。
+3.node需要自己根据packge.json来下载

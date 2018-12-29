@@ -1,0 +1,109 @@
+.mysearch{
+  margin-top: -65px !important;
+}
+.myinput{
+  margin-top: 50px;
+}
+.myinput_1{
+  margin-left: 300px;
+  display: inline-block;
+  float: left;
+}
+.myinput_2{
+  margin-left: 700px;
+}
+/*.el-select-dropdown{
+  top: 160px !important;
+}*/
+.affair{
+  height: 350px;
+  margin-left: 60px;
+}
+.affair_content{
+  height: 300px;
+  width: 1000px;
+  background-color: white;
+  box-shadow: darkgrey 2px 2px 8px 1px;
+  overflow: hidden;
+}
+.affair_content h2{
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+.aff_all{
+  float: left;
+  margin-top: 30px;
+  margin-left: 90px;
+  width: 140px;
+  text-align: center;
+  font-size: 14px;
+}
+.aff_all hr{
+  margin-top: 15px;
+}
+.number{
+  color:#00B7DD;
+  margin-left: 10px;
+}
+/*收益统计*/
+.affair_other{
+  height: 500px;
+}
+.affair_content_other{
+  height:450px;
+}
+
+/*销售排行（每月）*/
+.affair_sale{
+  height: 480px;
+  /*margin-left: 290px !important;*/
+  margin-top: 60px;
+}
+.affair_content_sale{
+  height:400px;
+}
+.psHeight{
+  margin-top: 40px;
+}
+.el-table{
+  margin-left: 65px;
+}
+.psHeight tr td{
+  padding: 0px;
+}
+/*去除按钮的边框*/
+.el-button{
+  border:0px!important;
+}
+.mybutton{
+  float: right;
+  margin-top: 25px;
+  margin-right: 40px;
+}
+.el-table__row{
+  height: 40px;
+}
+.el-button--primary{
+  background-color: #2aabd2 !important;
+}
+.jur_table{
+  margin-left: 230px;
+}
+.el-pagination{
+  position: absolute;
+  top: 650px;
+  right: 100px;
+}
+/*white-space: nowrap; //不换行
+text-overflow: ellipsis; //超出部分用....代替
+overflow: hidden; //超出隐藏*/
+.cell{
+  width:120px;
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-top: 5px;
+}

@@ -1,0 +1,57 @@
+.juName_all{
+  height: 850px;
+  width: 1000px;
+  background-color: white;
+  margin-left: 290px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.juall{
+  margin: 50px;
+}
+.jur_content1{
+  width: 850px;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.jur_content1 p{
+  height: 30px;
+  background-color: #FAFBFD;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+.jur_shu{
+  height: 80px;
+  box-shadow: darkgrey 2px 2px 8px 1px;
+  text-align: center;
+  line-height: 80px;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+  color:#2aabd2;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  color: #2aabd2;
+  background-color: #2aabd2;
+}
+.mySave{
+  margin-left: 45% !important;
+  margin-top: 30px !important;
+  width: 100px;
+  height: 47px;
+  border: 1px solid black !important;
+}
+.mySave:hover{
+  border:0px solid white !important;
+}
+.el-button--text{
+  margin-left: 41%;
+}
+.el-button--default{
+  float: left;
+}
+.myradio{
+  float: right;
+  margin-top: -60px;
+  margin-right: 50px;
+}

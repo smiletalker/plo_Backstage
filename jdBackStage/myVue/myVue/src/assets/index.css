@@ -1,0 +1,92 @@
+.el-icon-tickets{
+  height: 43px !important;
+  width: 34px !important;
+}
+.index_content{
+  margin-left: 17%;
+}
+.index_header{
+  height: 200px;
+  width: 100%;
+}
+.index_header1{
+  text-align: center;
+  float: left;
+  height: 115px;
+  width: 175px;
+  margin-left: 120px;
+  margin-top: 50px;
+  background-color: white;
+  box-shadow: darkgrey 2px 2px 8px 1px;
+  overflow: hidden;
+}
+.index_header1 img{
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.index_header1 p{
+  margin-top: 35px;
+  margin-left: 30px;
+}
+.index_header1 h3{
+  margin-top: 7px;
+}
+
+/*待办事务*/
+.affair{
+  height: 350px;
+  margin-left: 60px;
+}
+.affair_content{
+  height: 300px;
+  width: 1000px;
+  background-color: white;
+  box-shadow: darkgrey 2px 2px 8px 1px;
+  overflow: hidden;
+}
+.affair_content h2{
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+.aff_all{
+  float: left;
+  margin-top: 30px;
+  margin-left: 90px;
+  width: 140px;
+  text-align: center;
+  font-size: 14px;
+}
+.aff_all hr{
+  margin-top: 15px;
+}
+.number{
+  color:#00B7DD;
+  margin-left: 10px;
+}
+/*收益统计*/
+.affair_other{
+  height: 500px;
+}
+.affair_content_other{
+  height:450px;
+}
+
+/*销售排行（每月）*/
+.affair_sale{
+  height: 480px;
+}
+.affair_content_sale{
+  height:400px;
+}
+.psHeight{
+  margin-top: 40px;
+}
+.el-table{
+  margin-left: 65px;
+}
+.psHeight tr td{
+  padding: 0px;
+}

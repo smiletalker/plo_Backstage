@@ -1,0 +1,107 @@
+<template>
+  <!--实现多选非常简单:
+  手动添加一个el-table-column，
+  设type属性为selection即可；
+  默认情况下若内容过多会折行显示，
+  若需要单行显示可以使用show-overflow-tooltip属性，
+  它接受一个Boolean，为true时多余的内容会在 hover 时以 tooltip 的形式显示出来。-->
+  <div class="bigbox">
+    <!--表格，用的是element里面的Table表格-->
+    <el-table ref="multipleTable" :data="tableData3" tooltip-effect="dark" style="width: 100%"
+    >
+
+      <el-table-column type="selection" show-overflow-tooltip></el-table-column>
+
+      <el-table-column prop="orderId" label="订单编号" show-overflow-tooltip></el-table-column>
+
+      <el-table-column prop="getTime" label="申请时间" show-overflow-tooltip></el-table-column>
+
+      <el-table-column prop="userName" label="用户名" show-overflow-tooltip></el-table-column>
+      <el-table-column prop="goodsPrice" label="退款金额" show-overflow-tooltip></el-table-column>
+
+      <el-table-column prop="state" label="申请状态" show-overflow-tooltip></el-table-column>
+
+
+
+
+    </el-table>
+
+    <div style="margin-top: 20px;height:37px;">
+      <!--分页-->
+      <orderPage></orderPage>
+    </div>
+  </div>
+</template>
+
+<script>
+
+  import orderPage from './orderPage'
+  export default {
+    name: "ordertable6",
+    components:{
+
+      orderPage:orderPage
+
+    },
+    data() {
+      return {
+        formInline: {
+          user: '',
+          region: ''
+        },
+        tableData3: [],
+        multipleSelection: []
+      }
+    },
+    mounted(){
+      var arr = sessionStorage.getItem('data');
+      var array = JSON.parse(arr);
+      console.log(array.permissionName);
+      var adm_name=document.getElementsByClassName("adm_name")[0];
+      var adm_attribute=document.getElementsByClassName("adm_attribute")[0];
+      /*console.log(adm_name);*/
+      adm_name.innerHTML=array.adm_name;
+      adm_attribute.innerHTML=array.adm_attribute;
+      if(array.adm_attribute=="普通管理员"){
+        var pro_all=document.getElementsByClassName("pro_all")[0];
+        var staff_all=document.getElementsByClassName("staff_all")[0];
+        console.log(pro_all);
+        /*  pro_all.classList.add("is-disabled");*/
+        staff_all.classList.add("is-disabled");
+        /*staff_all.attr("is-disabled",true);*/
+        $(".staff1")[0].style.display="none";
+        $(".staff2")[0].style.display="none";
+        /*pro_all.style.display="none";*/
+        staff_all.style.display="none";
+      }
+      if(array.indexOf("博客CURD")=="-1"){
+        var blog_all=document.getElementsByClassName("blog_all")[0];
+        blog_all.style.display="none";
+      }
+    },
+    created () {
+      let that=this;
+      /*发起请求，请求数据，向node发起请求*/
+      this.$axios.get("/api/ordertable6.do")
+        .then(function (resp) {
+          that.tableData3=resp.data;
+        })
+    }
+  }
+</script>
+
+<style scoped>
+  .bigbox{
+    width: 68%;
+    margin-left: 24%;
+    /*outline: 1px solid red;*/
+    box-shadow: 0 2px 5px 0 #afafaf;
+    background-color: white;
+  }
+  .btndiv{
+    /*outline: 1px solid pink;*/
+    float: right;
+  }
+
+
+</style>
